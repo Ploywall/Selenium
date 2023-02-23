@@ -30,6 +30,7 @@ namespace ConsoleApp1
             [Test]
             public void ExecuteTest()
             {
+            //STEP01 Login
             //click on the Login button
             IWebElement elelogin = driver.FindElement(By.Id("AdvanceSearch_ASPxButton1"));
             elelogin.Click();
@@ -56,6 +57,8 @@ namespace ConsoleApp1
             eleaccess.Click();
             Thread.Sleep(1000);
             Console.Write("access without event selection button is clicked \n");
+
+            //STEP02 Hotel Assignment
             //click on the logistics button  
             IWebElement elelogistics = driver.FindElement(By.Id("TopPanel_ASPxMenu1_DXI3_"));
             elelogistics.Click();
@@ -67,75 +70,52 @@ namespace ConsoleApp1
             Thread.Sleep(1000);
             Console.Write("hotel assignment button   is clicked \n");
 
+            //STEP03 Print Voucher
             //click on the eleoc button  
             IWebElement eleoc = driver.FindElement(By.Id("TopPanel_UpdatePanel1"));
             eleoc.Click();
             Thread.Sleep(1000);
             Console.Write("eleoc button   is clicked \n");
-
             //click on the New England button
             IWebElement eleng = driver.FindElement(By.Id("TopPanel_cbOCselection_DDD_L_LBI2T0"));
             eleng.Click();
             Thread.Sleep(1000);
             Console.Write("NG: New England button   is clicked \n");
-            
-
             //click on the eleoc button  
             IWebElement eleevent = driver.FindElement(By.Id("TopPanel_gluEvents_B-1"));
             eleevent.Click();
             Thread.Sleep(2000);
             Console.Write("eleevent button   is clicked \n");
-
             //click on the New England button
-            IWebElement eleeleevent1 = driver.FindElement(By.Id("TopPanel_gluEvents_DDD_gv_tccell4_0"));
+            IWebElement eleeleevent1 = driver.FindElement(By.Id("TopPanel_gluEvents_DDD_gv_DXDataRow8"));
             eleeleevent1.Click();
             Thread.Sleep(7000);
             Console.Write("eleeleevent1 button   is clicked \n");
-
-
             //click on the eleoc button  
             IWebElement eleregion = driver.FindElement(By.Id("ASPxPanel2_ContentPlaceHolder1_ddeRegion_B-1"));
             eleregion.Click();
             Thread.Sleep(2000);
             Console.Write("eleregion button   is clicked \n");
-
             //click on the New England button
             IWebElement eleregion1 = driver.FindElement(By.XPath("//*[@id=\"ASPxPanel2_ContentPlaceHolder1_ddeRegion_DDD_L_LBI3T0\"]"));
             eleregion1.Click();
             Thread.Sleep(15000);
             Console.Write("eleregion1 button   is clicked \n");
-
-            //click on the eledate button  
-            //IWebElement eledate = driver.FindElement(By.Id("ASPxPanel2_ContentPlaceHolder1_deStartDate_I"));
-            //eledate.Click();
-            //Thread.Sleep(2000);
-            //Console.Write("eledate button   is clicked \n");
-
-            //click on the eledate1 button 
-            //IWebElement eledate1 = driver.FindElement(By.XPath("//*[@id=\"ASPxPanel2_ContentPlaceHolder1_deStartDate_DDD_C_mt\"]/tbody/tr[2]/td[6]"));
-            //eledate1.Click();
-            //Thread.Sleep(2000);
-            //Console.Write("eledate1 button   is clicked \n");
-
-            
             //click on the checkbox button 
-            IWebElement elecheckbox = driver.FindElement(By.Id("ASPxPanel2_ContentPlaceHolder1_gvHotelAssignment_DXSelBtn0"));
+            IWebElement elecheckbox = driver.FindElement(By.Id("ASPxPanel2_ContentPlaceHolder1_gvHotelAssignment_DXSelBtn0_D"));
             elecheckbox.Click();
             Thread.Sleep(5000);
             Console.Write("checkbox button is clicked \n");
-
             //click on the voucher button 
             IWebElement elevoucher = driver.FindElement(By.Id("ASPxPanel2_ContentPlaceHolder1_btnVoucher"));
             elevoucher.Click();
             Thread.Sleep(5000);
             Console.Write("voucher button is clicked \n");
-
             //click on the download button  ASPxPanel2_ContentPlaceHolder1_voucherDownloadPopup_DXPWMB-1
             IWebElement eledownload = driver.FindElement(By.Id("ASPxPanel2_ContentPlaceHolder1_voucherDownloadPopup_downloadVoucherBtn"));
             eledownload.Click();
             Thread.Sleep(6000);
             Console.Write("download button is clicked \n");
-
         }
         [TearDown]
             public void EndTest()
