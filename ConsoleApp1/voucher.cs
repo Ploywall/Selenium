@@ -60,7 +60,7 @@ namespace ConsoleApp1
 
             //STEP02 Hotel Assignment
             //click on the logistics button  
-            IWebElement elelogistics = driver.FindElement(By.Id("TopPanel_ASPxMenu1_DXI3_"));
+            IWebElement elelogistics = driver.FindElement(By.Id("TopPanel_ASPxMenu1_DXI3_P"));
             elelogistics.Click();
             Thread.Sleep(1000);
             Console.Write("logistics button   is clicked \n");
@@ -96,8 +96,8 @@ namespace ConsoleApp1
             eleregion.Click();
             Thread.Sleep(2000);
             Console.Write("eleregion button   is clicked \n");
-            //click on the New England button
-            IWebElement eleregion1 = driver.FindElement(By.XPath("//*[@id=\"ASPxPanel2_ContentPlaceHolder1_ddeRegion_DDD_L_LBI3T0\"]"));
+            //click on the New England button //ASPxPanel2_ContentPlaceHolder1_ddeRegion_DDD_L_LBI3T0
+            IWebElement eleregion1 = driver.FindElement(By.XPath("//*[@id=\"ASPxPanel2_ContentPlaceHolder1_ddeRegion_DDD_L_LBT\"]/tbody/tr[4]"));
             eleregion1.Click();
             Thread.Sleep(15000);
             Console.Write("eleregion1 button   is clicked \n");
